@@ -37,11 +37,12 @@ USER_DB=betoazhueyapa
 PASS_DB=feQ4Xvq1BYapDow8
 ## Endpoints de la API
 Las rutas de la API están asociadas con los métodos del controlador reportesController.
+(http://localhost:[puerto]/reportes/id) ||  (http://localhost:[puerto]/reportes)
 
 route.post('/',reportesController.create);
-route.get('/:id',reportesController.getOne)
-route.get('/',reportesController.getAll);
-route.put('/:id',reportesController.update);
+route.get('/:id',reportesController.getOne) 
+route.get('/',reportesController.getAll);  
+route.put('/:id',reportesController.update); 
 route.delete('/:id',reportesController.delete);
 
 
